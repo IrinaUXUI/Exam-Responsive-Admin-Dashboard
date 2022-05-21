@@ -99,20 +99,36 @@
         <div class="main">
 
             <div class="topbar">
-                <div class="toggle"></div>
+                <div class="toggle" onclick="toggleMenu();"></div>
                 <div class="search">
                     <label>
                         <input type="text" placeholder="Search here...">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </label>
                 </div>
                 <div class="user">
-                    <img src="user.jpg" style="height: 100px;" alt="">
+                    <img src="user.jpg" style="height: 50px;" alt="">
                 </div>
             </div>
+
+            <!-- Card box -->
+
         </div>
 
 
     </div>
+
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main'); 
+
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

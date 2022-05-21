@@ -27,6 +27,9 @@ body{
     overflow: hidden;
 }
 
+.navigation.active{
+    width: 60px
+}
 
 .navigation ul{
     position: absolute;
@@ -46,6 +49,7 @@ body{
 
 .navigation ul li:hover{
     background-color: #FF7300; 
+    color: #00002D;
 }
 
 .navigation ul li:nth-child(1){ /* TODO fix this */
@@ -97,10 +101,16 @@ body{
     transition: 0.5s;
 }
 
+.main.active{
+    width: calc(100%-60px);
+    left: 60px;
+}
+
 .main .topbar{
-    width: 100%;
+    width: 95vw; /* TODO solve this problem (was 100%)*/
     /*background: #00002D; TODO remove this at the end*/
     height: 60px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,5 +133,70 @@ cursor: pointer;
     height: 100%;
     font-size: 24px; 
     line-height: 60px;
-    margin-left: 20px; /*TODO change this if needed*/
+    /*margin-left: 20px; TODO change this if needed*/
+    text-align: center;
 }
+
+.search{
+    position:relative;
+    width: 400px;
+    margin: 0 10px;
+}
+
+.search label{
+    position: relative;
+    width: 100%;
+    
+}
+/* My code TODO*/
+input::placeholder{
+    color: #9c9c9c;
+    background: #00002D; 
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+input{
+    border: #00002D;/* this is outer border*/
+}
+/* End of My code TODO*/
+
+.search label input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background: #00002D;
+    color: #FF7300; /* color of the text when user search something*/
+    padding: 5px 20px;
+    padding-left: 50px;
+    font-size: 20px;
+    outline: none;/* this is inner border*/
+}
+
+.search label .fa{
+    position: absolute;
+    left: 15px;
+    top: 4px;
+    color: #FF7300;
+    font-size: 18px;
+}
+
+.user{
+    position: relative;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
