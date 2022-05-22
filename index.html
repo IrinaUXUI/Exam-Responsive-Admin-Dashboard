@@ -92,12 +92,13 @@
 
         </div>
 
-
+   
         <!-- MAIN -->
 
-        <!-- Search bar -->
+
         <div class="main">
 
+            <!-- Search bar -->
             <div class="topbar">
                 <div class="toggle" onclick="toggleMenu();"></div>
                 <div class="search">
@@ -112,17 +113,116 @@
             </div>
 
             <!-- Card box -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="number">254 257</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="number">58 700</div>
+                        <div class="cardName">Users</div>
+                    </div>
+                    <div class="iconBox"><i class="fa fa-users" aria-hidden="true"></i></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="number">75 800</div>
+                        <div class="cardName">Daily Posts</div>
+                    </div>
+                    <div class="iconBox"><i class="fa fa-comments" aria-hidden="true"></i></i></div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="number">4 850</div>
+                        <div class="cardName">Movies</div>
+                    </div>
+                    <div class="iconBox"><i class="fa fa-film" aria-hidden="true"></i></i></div>
+                </div>
+
+
+            </div>
+
+            <!-- Details -->
+            <div class="details">
+
+                <div class="recentMovies">
+                    <div class="cardHeader">
+                        <h2>Recent Movies</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Genre</td>
+                                <td>Year</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>The Shawshank Redemption</td>
+                                <td>Crime/Drama</td>
+                                <td>1994</td>
+                                <td><span class="status approved">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td>The Lord of the Rings: The Return of the King </td>
+                                <td>Fantasy/Adventure</td>
+                                <td>2003</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Black Widow </td>
+                                <td>Fantasy</td>
+                                <td>2021</td>
+                                <td><span class="status inProgress">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>The Shawshank Redemption</td>
+                                <td>Crime/Drama</td>
+                                <td>1994</td>
+                                <td> <span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>The Lord of the Rings: The Return of the King </td>
+                                <td>Fantasy/Adventure</td>
+                                <td>2003</td>
+                                <td><span class="status approved">Approved</span></td>
+                            </tr>
+                            <tr>
+                                <td>Black Widow </td>
+                                <td>Fantasy</td>
+                                <td>2021</td>
+                                <td> <span class="status inProgress">In progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="recentUsers">
+                    <div class="cardHeader">
+                        <h2>Recent Users</h2>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-
     </div>
-
     <script>
-        function toggleMenu(){
+        function toggleMenu() {
             let toggle = document.querySelector('.toggle');
             let navigation = document.querySelector('.navigation');
-            let main = document.querySelector('.main'); 
+            let main = document.querySelector('.main');
 
             toggle.classList.toggle('active');
             navigation.classList.toggle('active');

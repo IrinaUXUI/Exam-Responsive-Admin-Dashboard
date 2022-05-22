@@ -244,6 +244,7 @@ input{
     padding: 20px;
     padding-top: 0;
     display: grid;
+    grid-gap:20px;
     grid-template-columns: 2fr 1fr;   /*TODO Solve this problem */   
 }
 
@@ -285,12 +286,12 @@ input{
 
 .details table thead td{
     font-weight: 700;
-    color: #9c9c9c;
+    color: #D9D9D9;
     font-size: 1.2em;
 }
 
 .details .recentMovies table tr{
-    color: #D9D9D9;
+    color: #9c9c9c;
     font-weight: 700;
     /* border-bottom: 5px solid #9c9c9c;  not working*/
 }
@@ -299,4 +300,55 @@ input{
     color: #00002D;
 }
 
+.details .recentMovies table tr td{
+    padding: 9px 5px;
+}
 
+.details .recentMovies table thead tr td:last-child,
+.details .recentMovies table tbody tr td:last-child{
+    text-align: right;
+}
+
+.details .recentMovies table thead tr td:nth-child(2),
+.details .recentMovies table tbody tr td:nth-child(2){
+    text-align: right;
+    padding-right: 20px;
+}
+
+.details .recentMovies table thead tr td:nth-child(3),
+.details .recentMovies table tbody tr td:nth-child(3){
+    text-align: center;
+}
+
+.status{
+    position: relative;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.approved{
+    background: #64FF00;
+    color: #00002D;
+}
+
+.inProgress{
+    background: #E7FF00;
+    color: #00002D;
+}
+
+.pending{
+    background: #FC49AB;
+    color: #f6ecec;
+}
+
+.details .recentUsers{
+    position: relative;
+    display: grid;
+    min-height: 530px;
+    background: #00002D;
+    border-radius: 16px;
+    padding: 20px;
+}
