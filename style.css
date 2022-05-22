@@ -10,7 +10,7 @@
 
 body{
    
-    overflow: hidden;
+  /*  overflow: hidden;*/
     background: #010117;
     color: rgb(16, 215, 76); /* TODO change this! */
 }
