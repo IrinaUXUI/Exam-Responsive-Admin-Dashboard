@@ -346,9 +346,46 @@ input{
 
 .details .recentUsers{
     position: relative;
-    display: grid;
     min-height: 530px;
     background: #00002D;
     border-radius: 16px;
     padding: 20px;
+}
+h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+
+.details .recentUsers .imgBx{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin-bottom: 5px;   
+}
+
+.details .recentUsers .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.details .recentUsers table tr:hover,
+.details .recentUsers table tr:hover td{
+    background: #FF7300;
+    color: #00002D;
+}
+
+.details .recentUsers table tr td{
+    color: #9c9c9c;
+    padding: 7px 20px;   
+}
+.details .recentUsers table tr td h4 span{
+    font-size: 12;
+    color: #9c9c9c;
 }
